@@ -44,7 +44,7 @@ const Message = () => {
   const sendMessage = async (formData) => {
 
     try {
-        const res = await axios.post('http://localhost:5000/api/message',
+        const res = await axios.post('https://contact-app-1723.herokuapp.com/api/message',
         {message: checked ? formData.message : `Hi, Your OTP is : ${otp}`, mobile: formData.mobile}, {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
